@@ -1,0 +1,61 @@
+/* Estilos para los espacios vacíos de las cartas */
+.card-placeholder {
+    width: 80px;
+    height: 120px;
+    border: 2px dashed #ccc;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* Estilos para las cartas */
+.card {
+    width: 80px;
+    height: 120px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-flex;
+    /* Usamos flexbox para centrar el contenido */
+    align-items: center;
+    /* Centramos verticalmente */
+    justify-content: center;
+    /* Centramos horizontalmente */
+    text-align: center;
+    /* Por si acaso */
+    background-size: contain;
+}
+
+/* Estilos para el contenedor principal */
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    /* Usamos viewport height para ocupar toda la pantalla */
+}
+
+/* Estilos para el contenedor de las cartas */
+.hand {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para las manos del NPC y del jugador */
+#npc-hand,
+#player-hand {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    /* Añadimos un margen entre las manos */
+}
+
+/* Estilos para la mesa de juego */
+.mesa {
+    height: 45vh;
+    width: 75vh;
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+}

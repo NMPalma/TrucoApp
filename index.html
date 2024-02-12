@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Truco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="npc-hand" class="hand">
+            <!-- Espacios vacíos para las cartas del NPC -->
+        </div>
+        <div class="mesa" id="played-cards">
+            <!-- Espacios vacíos para las cartas jugadas durante la mano -->
+            <div id="npc-played-cards" class="played-cards">
+                <div class="card-placeholder" data-palo="espada" data-numero="1" data-jugador="player"></div>
+                <div class="card-placeholder" data-palo="espada" data-numero="1" data-jugador="player"></div>
+                <div class="card-placeholder" data-palo="espada" data-numero="1" data-jugador="player"></div>
+            </div>
+            <div id="player-played-cards" class="played-cards">
+                <div class="card-placeholder" data-palo="espada" data-numero="1" data-jugador="player"></div>
+                <div class="card-placeholder" data-palo="espada" data-numero="1" data-jugador="player"></div>
+                <div class="card-placeholder" data-palo="espada" data-numero="1" data-jugador="player"></div>
+            </div>
+        </div>
+        <div id="player-hand" class="hand">
+            <!-- Espacios vacíos para las cartas del jugador -->
+        </div>
+        <div id="game-info">
+            <!-- Aquí se mostrará la información del juego, como los puntos, mensajes de estado, etc. -->
+        </div>
+        <div id="game-actions">
+            <!-- Aquí se mostrarán los botones de acción, como jugar carta, aceptar desafío, etc. -->
+        </div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
